@@ -95,7 +95,7 @@ class NSEFnOScreener:
                 # एक डमी या कस्टमाइजेबल OI चेंज मैकेनिज्म (प्रैक्टिकल यूज़ के लिए हम इसे मान लेते हैं)
                 # यहाँ टेस्ट के लिए रैंडम या वॉल्यूम बेस्ड जनरेशन की जगह हमने 7% का थ्रेशोल्ड रखा है।
                 is_high_oi = (
-                    oi_change_pct >= 7.0 or (live_volume > prev_day["Volume"] * 0.1)
+                   oi_change_pct >= 6.0  or (live_volume > prev_day["Volume"] * 0.1)
                 )  # 9:25 तक कल का 10% वॉल्यूम आ जाना बड़ा साइन है
 
                 # क्राइटेरिया 2: Previous Day Top Gainer (>2.5%) या Top Loser (<-2.5%)
