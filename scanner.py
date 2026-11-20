@@ -1,8 +1,12 @@
-NSE F&O Live Stock Screener (9:25 AM Execution)
-Author: Your Name
-Description: Screens F&O stocks at market open based on OI Change, Previous Day Performance, 
-             Breakouts, High Delivery Volume, and 200-day Moving Average (SMA).
-"""
+# NSE F&O Live Stock Screener (9:25 AM Execution)
+# Author: Your Name
+# Description: Screens F&O stocks at market open based on OI Change, Previous Day Performance, 
+#             Breakouts, High Delivery Volume, and 200-day Moving Average (SMA).
+
+
+
+
+
 
 from datetime import datetime, timedelta
 import numpy as np
