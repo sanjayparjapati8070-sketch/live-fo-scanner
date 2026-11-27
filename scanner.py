@@ -110,7 +110,7 @@ class NSEFnOScreener:
                 is_top_performer = abs(prev_day_return) >= 2.5
 
                 # --- सभी फ़िल्टर्स को कंबाइन करना ---
-                if (
+                 if (
                     is_above_200_sma
                     and is_breakout
                     and has_high_delivery_volume
@@ -124,8 +124,8 @@ class NSEFnOScreener:
                             "LTP (9:25 AM)": round(current_price, 2),
                             "Prev Day Return %": round(prev_day_return, 2),
                             "200 SMA": round(sma_200, 2),
-                            "Breakout Type": "Bullish"
-                            if current_price > prev_day["High"]
+                            "Breakout Type": "Bullish" if current_price > prev_day["High"] else "Bearish",
+                            
                             else "Bearish",
                             "Status": "MATCHED",
                         }
